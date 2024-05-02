@@ -1,0 +1,65 @@
+
+
+
+.root {
+  -fx-background-color: dodgerblue;
+  -fx-padding: 30px;
+  -fx-font-size: 20px;
+  -fx-font-family: "Comic Sans MS";
+}
+
+.info {
+  -fx-text-fill: whitesmoke;
+}
+
+.button {
+  -fx-base: antiquewhite;
+  -fx-background-color: transparent;
+  -fx-text-fill: white;
+
+}
+.button:hover{
+  -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+  -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+  -fx-background-radius: 3px, 3px, 2px, 1px;
+  -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; /* 4 8 4 8 */
+  -fx-text-fill: -fx-text-base-color;
+  -fx-alignment: CENTER;
+  -fx-content-display: RIGHT;
+}
+
+.game-controls {
+  -fx-spacing: 20px;
+  -fx-alignment: center;
+}
+
+.status-indicator {
+  -fx-alignment: center;
+  -fx-padding: 16px;
+}
+
+.board {
+  -fx-background-color: red;
+  -fx-hgap: 10px;
+  -fx-vgap: 10px;
+  /**-fx-effect: dropshadow(gaussian, slategrey, 20, 0, 0, 0);*/ /* effect disabled as it causes texture tearing on java 8b79 ea for OS X*/
+}
+#inputCmd
+{
+  -fx-background-color: black;
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+}
+#appdraw{
+
+  -fx-background-color: rgba(1, 20, 255, 0.09);
+-fx-effect: dropshadow(gaussian, lightblue, 50, 0, 0, 0);
+
+}
+#base{
+  -fx-background-color: rgba(1, 20, 255, 0.2);
+}
+.square {
+  -fx-padding: 10px;
+  -fx-background-color: azure;
+}

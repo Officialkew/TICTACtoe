@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="main" prefHeight="450.0" prefWidth="260.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OS.Controllers.MainmenuController">
+
+   <children>
+      <ImageView fx:id="mainview" fitHeight="459.0" fitWidth="299.0" layoutY="30.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/wallpaper.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="base" layoutY="434.0" prefHeight="55.0" prefWidth="299.0" stylesheets="@../CSS/tictactoe-blueskin.css">
+         <children>
+            <ImageView fx:id="btnappdraw" fitHeight="39.0" fitWidth="52.0" layoutX="89.0" layoutY="3.0" onMouseClicked="#btnappdraw" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/app.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="back" fitHeight="31.0" fitWidth="40.0" layoutX="154.0" layoutY="6.0" onMouseClicked="#goback" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/back.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane id="appdraw" layoutY="-1.0" prefHeight="31.0" prefWidth="299.0" style="-fx-background-color: #01579b;">
+         <children>
+            <ImageView fitHeight="22.0" fitWidth="27.0" layoutX="239.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <ColorAdjust brightness="1.0" contrast="0.79" />
+               </effect>
+               <image>
+                  <Image url="@../Images/signal.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="27.0" layoutX="268.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <ColorAdjust brightness="1.0" contrast="0.79" />
+               </effect>
+               <image>
+                  <Image url="@../Images/battery.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="27.0" layoutX="211.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <ColorAdjust brightness="1.0" contrast="0.79" />
+               </effect>
+               <image>
+                  <Image url="@../Images/wifi.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="9.0" layoutY="6.0" text="FLOW" textFill="#ddd9d9" />
+            <ImageView fitHeight="22.0" fitWidth="27.0" layoutX="46.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <ColorAdjust brightness="1.0" contrast="0.79" />
+               </effect>
+               <image>
+                  <Image url="@../Images/message.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <ImageView fx:id="btntictac" fitHeight="62.0" fitWidth="75.0" layoutX="34.0" layoutY="57.0" onMousePressed="#btntictac" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/tic.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnprocess" fitHeight="62.0" fitWidth="75.0" layoutX="112.0" layoutY="57.0" onMousePressed="#btnprocess" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/process.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="62.0" fitWidth="75.0" layoutX="119.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/whatsapp.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnfile" fitHeight="62.0" fitWidth="75.0" layoutX="193.0" onMousePressed="#btnfile" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/file.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnmem" fitHeight="62.0" fitWidth="75.0" layoutX="41.0" layoutY="168.0" onMouseClicked="#btnmem" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Memory.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="62.0" fitWidth="75.0" layoutX="193.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Instagram.png" />
+         </image>
+      </ImageView>
+    <TextField id="inputCmd" fx:id="inputCmd"  layoutX="20.0" layoutY="397.0" onAction="#inputCmd" prefHeight="25.0" prefWidth="259.0" stylesheets="@../CSS/tictactoe-blueskin.css"  />
+   </children>
+</AnchorPane>

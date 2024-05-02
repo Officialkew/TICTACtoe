@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TICTACtoe:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TICTACtoe_jar</output-path>
+    <root id="archive" name="TICTACtoe.jar">
+      <element id="module-output" name="TICTACtoe" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jfoenix.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
